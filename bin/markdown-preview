@@ -12,7 +12,7 @@ var filename = process.argv[2] && path.join(process.cwd(), process.argv[2])
   , port     = 3333;
 
 check(filename)
-  .accept(['md', 'markdown'])
+  .accept(['md', 'markdown', 'html'])
   .pass(function(name) {
     watch(name, function() {
       stamp.update();
